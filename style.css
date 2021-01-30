@@ -6,7 +6,8 @@
 
   header{
     background-color: yellow;
-    padding: 5vw
+    padding: 5vw;
+  
 }
   nav{
     background-color: yellow;
@@ -41,24 +42,98 @@ figure img{
 
 .wrapper{
   margin: 2em;
- 
 }
 
 
 .video{
-  width: 100vw
   margin: 2em;
+  width: calc(98vw -2em);
 }
 
 iframe{
- 
-  margin: 0em 1em;
-  width: calc(100vw - 2em);
+  width: calc(90vw - 1em);
 }
 
+.desktop-nav, .header-info-dsk{
+  display: none;
+}
+
+
 @media (min-width: 1025px){
+  #icon{
+    display: none;
+  }
+
+  header{
+    padding: 1em;
+  }
+  .header-info-dsk{
+    display: inline-block;
+    z-index: 10;
+    float: none;
+    margin-left: 58em;    
+  }
+
+  .header-info-dsk li{
+    display: inline-block;
+    text-align: right;
+    margin-left: 5em;
+  }
+
+  iframe{
+    margin: 0em 1em;
+    height: 50vw;
+    width: calc(100vw - 6em);
+  }
   .rows{
     display: flex;
-    
   }
+  #menu{
+      display: none
+  }
+  .desktop-nav{
+    display: inline-block;
+    background: #fff;
+    height: 10px;
 }
+.logo{
+  margin-left: 5em;
+    float: left;
+    height: 7vw;
+    width: auto;
+}
+.desktop-nav ul{
+margin: 3.2em 2rem;
+font-size: 1.2em;
+}
+.desktop-nav ul li{
+    color: grey;
+    display: inline-block;
+    margin-left: 4em;
+}
+figure{
+    height: 15vh;
+}
+
+figure img{
+  margin: 20px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: yellow;
+  min-width: 160px;
+  padding: 1em;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+}
+
+
